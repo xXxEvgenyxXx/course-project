@@ -1,4 +1,4 @@
-### Project Novoakopovsk
+# Project Novoakopovsk
 
 Добро пожаловать на официальный сайт Minecraft-сервера "Project Novoakopovsk".
 

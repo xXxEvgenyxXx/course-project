@@ -24,27 +24,7 @@
 
 # Структура проекта
 
-course-work/  
-├── public/  
-├── src/  
-│   ├── components/  
-│   │   ├── app/                 
-│   │   │   └── App.tsx  
-│   │   ├── ui/                  
-│   │   ├── Slider/              
-│   │   └── ...  
-│   ├── pages/  
-│   ├── presenters/  
-│   ├── models/  
-│   ├── styles/  
-│   ├── types/  
-│   ├── utils/  
-│   ├── hooks/  
-│   ├── assets/  
-│   └── index.tsx  
-├── package.json  
-└── README.md  
-
+![структура проекта](./src/assets/images/structure_of_the_project.png)
 # Установка и запуск
 
 1. Убедитесь, что у вас установлены Node.js(v16+) и npm(v8+);

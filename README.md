@@ -24,26 +24,26 @@
 
 # Структура проекта
 
-course-work/
-├── public/
-├── src/
-│   ├── components/
+course-work/  
+├── public/  
+├── src/  
+│   ├── components/  
 │   │   ├── app/                 
-│   │   │   └── App.tsx
+│   │   │   └── App.tsx  
 │   │   ├── ui/                  
 │   │   ├── Slider/              
-│   │   └── ...
-│   ├── pages/
-│   ├── presenters/
-│   ├── models/
-│   ├── styles/
-│   ├── types/
-│   ├── utils/
-│   ├── hooks/
-│   ├── assets/
-│   └── index.tsx
-├── package.json
-└── README.md
+│   │   └── ...  
+│   ├── pages/  
+│   ├── presenters/  
+│   ├── models/  
+│   ├── styles/  
+│   ├── types/  
+│   ├── utils/  
+│   ├── hooks/  
+│   ├── assets/  
+│   └── index.tsx  
+├── package.json  
+└── README.md  
 
 # Установка и запуск
 

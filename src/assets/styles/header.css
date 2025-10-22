@@ -2,7 +2,8 @@ header {
     position: fixed;
     padding: 20px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap:50px;
     z-index: 100;
     width: 100%;
 }
@@ -43,4 +44,5 @@ nav {
 .header-link:hover {
     color: #00bcd4;
     background-color: #2a2a2a;
+    transition:0.3s;
 }

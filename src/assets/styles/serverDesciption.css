@@ -1,8 +1,9 @@
 .server-description-wrapper {
     background-image: url('../../assets/images/main-page-bg.png');
+    background-position: center;
     background-size: cover;
     padding: 60px 30px;
-    height: 82vh;
+    height: 89vh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -19,7 +20,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 5%;
     pointer-events: none;
     z-index: 9;
 }
@@ -48,9 +49,8 @@
     border-radius: 12px;
 }
 
-/* Если хочешь разные отступы для заголовка и описания */
 .server-desc-header {
-    padding: 20px; /* Например, чуть больше */
+    padding: 20px;
 }
 
 .server-desc {

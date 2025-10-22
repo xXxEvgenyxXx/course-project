@@ -1,0 +1,32 @@
+header {
+    position:sticky;
+    padding:20px 100px;
+    display: flex;
+    justify-content: center;
+    gap:100px;
+}
+.server-name-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    background-color: #1a1a1a;
+    border-radius:12px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+}
+.header-link {
+    text-decoration: none;
+    color:#e0e0e0;
+    transition:0.3s;
+    font-size:20px;
+    padding:5px 10px;
+    border-radius:12px;
+}
+.header-link:hover {
+    color:#00bcd4;
+    background-color:#2a2a2a;
+}

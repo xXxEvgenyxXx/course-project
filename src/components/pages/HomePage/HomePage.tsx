@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { HomePageProps } from './type';
 import Header from '../../ui/Header/Header';
+import ServerDescription from '../../ui/ServerDescription/ServerDescription';
 import '../../../assets/styles/header.css'
 
 const HomePage: FC<HomePageProps> = (props) => {
@@ -9,6 +10,7 @@ const HomePage: FC<HomePageProps> = (props) => {
   return (
     <div className="homepage-wrapper">
       <Header/>
+      <ServerDescription />
     </div>
   );
 };

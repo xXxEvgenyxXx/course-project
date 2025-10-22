@@ -1,32 +1,46 @@
 header {
-    position:sticky;
-    padding:20px 100px;
+    position: fixed;
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
-    gap:100px;
+    justify-content: space-around;
+    z-index: 100;
+    width: 100%;
 }
+
 .server-name-wrapper {
+    background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Эффект размытия */
+    -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+    border-radius: 12px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 nav {
-    background-color: #1a1a1a;
-    border-radius:12px;
+    background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Эффект размытия */
+    -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+    border-radius: 12px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-around;
-    width:50%;
+    gap:1rem;
 }
+
 .header-link {
     text-decoration: none;
-    color:#e0e0e0;
-    transition:0.3s;
-    font-size:20px;
-    padding:5px 10px;
-    border-radius:12px;
+    color: #e0e0e0;
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 12px;
 }
+
 .header-link:hover {
-    color:#00bcd4;
-    background-color:#2a2a2a;
+    color: #00bcd4;
+    background-color: #2a2a2a;
 }

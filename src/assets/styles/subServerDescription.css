@@ -1,6 +1,5 @@
 .subserver-description-wrapper {
     position: relative;
-    background: url('../../assets/images/mtr-server-bg.png');
     background-size: cover;
     background-position: center;
     height:89vh;
@@ -8,6 +7,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 60px 30px;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .subserver-description-wrapper::before {
@@ -16,9 +16,9 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 5%; /* Регулируйте высоту зоны затенения */
+    height: 20%;
     background: linear-gradient(to bottom, #121212, transparent);
-    pointer-events: none; /* Обязательно, чтобы не мешал кликам */
+    pointer-events: none; 
     z-index: 1;
 }
 
@@ -28,13 +28,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 5%; /* Регулируйте высоту зоны затенения */
+    height: 20%; 
     background: linear-gradient(to top, #121212, transparent);
-    pointer-events: none; /* Обязательно, чтобы не мешал кликам */
+    pointer-events: none; 
     z-index: 1;
 }
 
-/* Убедимся, что содержимое (h1 и т.д.) находится поверх градиентов */
 .subserver-description-wrapper > * {
     position: relative;
     z-index: 2;

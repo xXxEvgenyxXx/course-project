@@ -11,7 +11,7 @@ export const listOfSubServers: IServer[] = [
     },
     {
         name: "Novoakopovsk Industrial",
-        description:"не придумал",
+        description:"это сервер, где вы можете воплотить любую индустрию с помощью мода Create в реальность!",
         background: '/images/create-server-bg.png'
     }
 ]

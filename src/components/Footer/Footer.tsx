@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
       ))}
       <div className="footer-bottom">
-        <p>Project Novoakopovsk - 2025. Not official Minecraft product. Not approved by or associated with Mojang Synergies AB.</p>
+        <p>Project Novoakopovsk — 2025. Not official Minecraft product. Not approved by or associated with Mojang Synergies AB.</p>
       </div>
     </footer>
   );

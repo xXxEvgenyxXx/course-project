@@ -1,20 +1,21 @@
-import React, { FC } from 'react';
-import { FooterUIProps } from './type';
-import { footerLinks } from '../../assets/data/footerLinks';
+import React from 'react';
 import '../../assets/styles/footer.css'
+import { footerLinks } from '../../assets/data/footerLinks';
 
-const Footer: FC<FooterUIProps> = (props) => {
-
+const Footer = () => {
   return (
     <footer>
-      {footerLinks.map((footerLinkGroup) => (
+      {footerLinks.map((footerLinksGroup) => (
         <div className="footer-links-wrapper">
-          <h2>{footerLinkGroup.header}</h2>
-          {footerLinkGroup.links.map((footerLink) => (
-            <a href={footerLink.url}>{footerLink.name}</a>
-          ))}
+            <h2 className="footer-links-head">{footerLinksGroup.header}</h2>
+            {footerLinksGroup.links.map((footerLink) => (
+                <a href={footerLink.url}>{footerLink.name}</a>
+            ))}
         </div>
       ))}
+      <div className="footer-bottom">
+        <p>Project Novoakopovsk - 2025. Not official Minecraft product. Not approved by or associated with Mojang Synergies AB.</p>
+      </div>
     </footer>
   );
 };

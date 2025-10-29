@@ -3,15 +3,17 @@ import { SubServerCardUIProps } from './type';
 import '../../../assets/styles/subServerCard.css'
 
 
-const subServerCardUI: FC<SubServerCardUIProps> = (props) => {
-  // const { title, count = 0, onClick } = props;
+const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
+  const background: React.CSSProperties = {
+    backgroundImage: `url(${props.background})`
+  }
 
   return (
-    <div className="subserver-card">
+    <div style={background} className="subserver-card">
       <h1>{props.name}</h1>
       <p>{props.online}</p>
     </div>
   );
 };
 
-export default subServerCardUI;
+export default SubServerCardUI;

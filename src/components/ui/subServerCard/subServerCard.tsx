@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import { subServerCardUIProps } from './type';
+import { SubServerCardUIProps } from './type';
 import '../../../assets/styles/subServerCard.css'
 
 
-const subServerCardUI: FC<subServerCardUIProps> = (props) => {
+const subServerCardUI: FC<SubServerCardUIProps> = (props) => {
   // const { title, count = 0, onClick } = props;
 
   return (

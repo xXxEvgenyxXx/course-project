@@ -1,6 +1,7 @@
 import React from 'react';
 import { listOfSubServers } from '../../assets/data/listOfSubServers';
 import SubServerCardUI from '../ui/SubServerCard/SubServerCard';
+import '../../assets/styles/subServerCards.css'
 
 const SubServersCards= () => {
   return (

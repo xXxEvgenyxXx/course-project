@@ -10,7 +10,7 @@ const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
 
   return (
     <div style={background} className="subserver-card">
-      <h1>{props.name}</h1>
+      <h2>{props.name}</h2>
       <p>{props.online}</p>
     </div>
   );

@@ -1,5 +1,6 @@
 export type SubServerCardUIProps = {
   name:string,
   background:string,
-  online:number
+  online:number,
+  status: "online" | "offline"
 };

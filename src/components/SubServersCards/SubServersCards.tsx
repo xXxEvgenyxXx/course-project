@@ -7,7 +7,7 @@ const SubServersCards= () => {
   return (
     <div className="subservers-cards-wrapper">
       {listOfSubServers.map((subServer) => (
-        <SubServerCardUI name={subServer.name} background={subServer.background} online={subServer.online} />
+        <SubServerCardUI status={subServer.status} name={subServer.name} background={subServer.cardBackground} online={subServer.online} />
       ))}
     </div>
   );

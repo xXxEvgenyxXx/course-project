@@ -1,5 +1,7 @@
 .subservers-cards-wrapper {
     padding: 0 30px 50px;
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap:20px;
 }

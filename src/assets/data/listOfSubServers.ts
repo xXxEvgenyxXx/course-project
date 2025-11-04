@@ -19,13 +19,13 @@ export const listOfSubServers: IServer[] = [
         name: "Novoakopovsk Industrial",
         description:"это сервер, где вы можете воплотить любую индустрию с помощью мода Create в реальность!",
         background: '/images/create-server-bg.png',
-        online:0,
+        online:249,
         cardBackground:'/images/create-server-card-bg.png',
-        status: "offline"
+        status: "online"
     },
     {
         name: "Novoakopovsk 2077",
-        description: "скоро будет",
+        description: "в разработке",
         online: 0,
         background:'/images/2077-server-bg.png',
         cardBackground:'/images/2077-server-card-bg.png',

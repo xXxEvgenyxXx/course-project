@@ -23,4 +23,12 @@ export const listOfSubServers: IServer[] = [
         cardBackground:'/images/create-server-card-bg.png',
         status: "offline"
     },
+    {
+        name: "Novoakopovsk 2077",
+        description: "скоро будет",
+        online: 0,
+        background:'/images/2077-server-bg.png',
+        cardBackground:'/images/2077-server-card-bg.png',
+        status:"offline"
+    },
 ]

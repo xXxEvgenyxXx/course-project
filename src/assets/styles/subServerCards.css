@@ -5,3 +5,8 @@
     justify-content: center;
     gap:20px;
 }
+.subservers-cards-wrapper > *:last-child:nth-child(odd) {
+    grid-column: span 2;
+    width: 50%;
+    justify-self:center;
+}

@@ -10,14 +10,14 @@ const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
   let widthPercentage: string = '5%';
 
   if (!isNaN(props.online)) {
-    if (props.online >= 1000) {
-      widthPercentage = '12%';
-    } else if (props.online >= 100) {
-      widthPercentage = '9%';
-    } else if (props.online >= 10) {
-      widthPercentage = '8%';
-    } else if (props.online >= 0) {
-      widthPercentage = '100px';
+    if (props.online === 1000) {
+      widthPercentage = '80px';
+    } else if (props.online >= 100 && props.online <= 999) {
+      widthPercentage = '65px';
+    } else if (props.online >= 10 && props.online <= 99) {
+      widthPercentage = '50px';
+    } else if (props.online >= 0 && props.online <=9) {
+      widthPercentage = '40px';
     }
   }
 

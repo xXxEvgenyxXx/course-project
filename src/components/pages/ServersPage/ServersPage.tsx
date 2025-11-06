@@ -4,6 +4,7 @@ import Header from '../../ui/Header/Header';
 import Footer from '../../Footer/Footer';
 import SubServersCards from '../../SubServersCards/SubServersCards';
 import '../../../assets/styles/serversPage.css';
+import ServerOnlineNumberUI from '../../ui/serverOnlineNumber/serverOnlineNumber';
 
 const ServersPage: FC<ServerPageProps> = (props) => {
   // const { title, count = 0, onClick } = props;
@@ -19,6 +20,7 @@ const ServersPage: FC<ServerPageProps> = (props) => {
           направления развития железных дорог и пишем квесты
         </p>
       </div>
+      <ServerOnlineNumberUI statName="Текущий онлайн" statNumber={1234} status="online" />
       <SubServersCards />
       <Footer />
     </div>

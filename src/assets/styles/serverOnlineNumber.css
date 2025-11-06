@@ -1,0 +1,11 @@
+.server-online-number-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding:10px 20px;
+    width: 150px;
+}

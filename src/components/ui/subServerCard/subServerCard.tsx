@@ -17,7 +17,7 @@ const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
     } else if (props.online >= 10) {
       widthPercentage = '8%';
     } else if (props.online >= 0) {
-      widthPercentage = '7%';
+      widthPercentage = '100px';
     }
   }
 

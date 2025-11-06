@@ -3,3 +3,4 @@ dist/
 build/
 *.min.js
 src/assets/
+build/

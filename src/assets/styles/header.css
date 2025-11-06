@@ -1,48 +1,48 @@
 header {
-    position: fixed;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap:50px;
-    z-index: 100;
-    width: 100%;
+  position: fixed;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  z-index: 100;
+  width: 100%;
 }
 
 .server-name-wrapper {
-    background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
-    backdrop-filter: blur(10px); /* Эффект размытия */
-    -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
-    border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
-    border-radius: 12px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+  backdrop-filter: blur(10px); /* Эффект размытия */
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
-    background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
-    backdrop-filter: blur(10px); /* Эффект размытия */
-    -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
-    border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
-    border-radius: 12px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-around;
-    gap:1rem;
+  background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+  backdrop-filter: blur(10px); /* Эффект размытия */
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 .header-link {
-    text-decoration: none;
-    color: #e0e0e0;
-    transition: 0.3s;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 12px;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: 0.3s;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 12px;
 }
 
 .header-link:hover {
-    color: #00bcd4;
-    background-color: #2a2a2a;
-    transition:0.3s;
+  color: #00bcd4;
+  background-color: #2a2a2a;
+  transition: 0.3s;
 }

@@ -25,17 +25,18 @@
 # Структура проекта
 
 ![структура проекта](./src/assets/images/structure_of_the_project.png)
+
 # Установка и запуск
 
 1. Убедитесь, что у вас установлены Node.js(v16+) и npm(v8+);
-2. Склонируйте репозиторий 
-git clone https://github.com/xXxEvgenyxXx/course-project;
+2. Склонируйте репозиторий
+   git clone https://github.com/xXxEvgenyxXx/course-project;
 3. Перейдите в директорию проекта:
-cd course-work
+   cd course-work
 4. Установите зависимости:
-npm install
+   npm install
 5. Запустите в режиме разработки:
-npm start
+   npm start
 
 # Сборка
 

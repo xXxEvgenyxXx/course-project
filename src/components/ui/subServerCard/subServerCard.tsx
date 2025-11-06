@@ -7,21 +7,23 @@ const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
   const background: React.CSSProperties = {
     backgroundImage: `url(${props.background})`,
   };
-  let widthPercentage:string = '5%';
+  let widthPercentage: string = '5%';
 
   if (!isNaN(props.online)) {
     if (props.online >= 1000) {
-      widthPercentage = '10%';
+      widthPercentage = '12%';
     } else if (props.online >= 100) {
-      widthPercentage = '7.5%';
+      widthPercentage = '9%';
     } else if (props.online >= 10) {
-      widthPercentage = '6%';
+      widthPercentage = '8%';
+    } else if (props.online >= 0) {
+      widthPercentage = '7%';
     }
   }
 
-  let colorStatus: string = "#4caf50"
-  if(props.status === "offline"){
-    colorStatus = "#a0a0a0"
+  let colorStatus: string = '#4caf50';
+  if (props.status === 'offline') {
+    colorStatus = '#a0a0a0';
   }
 
   const onlineWrapperStyle: React.CSSProperties = {
@@ -29,8 +31,8 @@ const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
   };
 
   const colorStatusStyle: React.CSSProperties = {
-    backgroundColor: colorStatus
-  }
+    backgroundColor: colorStatus,
+  };
 
   return (
     <div style={background} className="subserver-card">
@@ -38,7 +40,10 @@ const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
         <h2>{props.name}</h2>
         <div className="subserver-card-content-wrapper">
           <div className="subserver-online-wrapper" style={onlineWrapperStyle}>
-            <div style={colorStatusStyle} className="subserver-online-status"></div>
+            <div
+              style={colorStatusStyle}
+              className="subserver-online-status"
+            ></div>
             <p>{props.online}</p>
           </div>
         </div>

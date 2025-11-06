@@ -1,59 +1,59 @@
 .server-description-wrapper {
-    background-image: url('../../assets/images/main-page-bg.png');
-    background-position: center;
-    background-size: cover;
-    padding: 60px 30px;
-    height: 89vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    gap:10px;
-    justify-content: space-between;
-    font-family:'Exo 2',sans-serif;
+  background-image: url('../../assets/images/main-page-bg.png');
+  background-position: center;
+  background-size: cover;
+  padding: 60px 30px;
+  height: 89vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  justify-content: space-between;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* Общий слой размытия для всего wrapper */
 .server-description-wrapper::before,
 .server-description-wrapper::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 20%;
-    pointer-events: none;
-    z-index: 9;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20%;
+  pointer-events: none;
+  z-index: 9;
 }
 
 .server-description-wrapper::before {
-    top: 0;
-    background: linear-gradient(to bottom, #121212, transparent);
+  top: 0;
+  background: linear-gradient(to bottom, #121212, transparent);
 }
 
 .server-description-wrapper::after {
-    bottom: 0;
-    background: linear-gradient(to top, #121212, transparent);
+  bottom: 0;
+  background: linear-gradient(to top, #121212, transparent);
 }
 
 /* Стили для заголовка и описания */
 .server-desc-header,
 .server-desc {
-    position: relative;
-    z-index: 10; /* Поверх градиентов */
+  position: relative;
+  z-index: 10; /* Поверх градиентов */
 
-    /* Общие стили фона с размытием и рамкой */
-    background-color: rgba(26, 26, 26, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
+  /* Общие стили фона с размытием и рамкой */
+  background-color: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
 }
 
 .server-desc-header {
-    padding: 20px;
+  padding: 20px;
 }
 
 .server-desc {
-    padding: 15px;
-    width:500px;
+  padding: 15px;
+  width: 500px;
 }

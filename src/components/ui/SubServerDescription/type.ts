@@ -1,5 +1,5 @@
 export type SubServerDescriptionProps = {
-  name: string,
-  description:string,
-  background:string
+  name: string;
+  description: string;
+  background: string;
 };

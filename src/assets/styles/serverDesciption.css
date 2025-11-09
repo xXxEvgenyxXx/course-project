@@ -51,9 +51,12 @@
 
 .server-desc-header {
   padding: 20px;
+  font-size:2.5rem;
 }
 
 .server-desc {
   padding: 15px;
   width: 500px;
+  line-height:30px;
+  font-size:1.15rem;
 }

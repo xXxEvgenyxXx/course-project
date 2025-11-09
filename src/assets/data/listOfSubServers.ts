@@ -1,4 +1,4 @@
-export interface IServer {
+interface IServer {
   name: string;
   description: string;
   background: string;

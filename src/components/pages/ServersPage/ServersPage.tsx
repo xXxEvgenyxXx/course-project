@@ -4,7 +4,7 @@ import Header from '../../ui/Header/Header';
 import Footer from '../../Footer/Footer';
 import SubServersCards from '../../SubServersCards/SubServersCards';
 import '../../../assets/styles/serversPage.css';
-import ServerOnlineNumberUI from '../../ui/serverOnlineNumber/serverOnlineNumber';
+import ServerStats from '../../serverStats/serverStats';
 
 const ServersPage: FC<ServerPageProps> = (props) => {
   // const { title, count = 0, onClick } = props;
@@ -19,8 +19,8 @@ const ServersPage: FC<ServerPageProps> = (props) => {
           разработками. Для каждой сборки мы отбираем интересные моды, делаем
           направления развития железных дорог и пишем квесты
         </p>
+        <ServerStats />
       </div>
-      <ServerOnlineNumberUI statName="Текущий онлайн" statNumber={1234} status="online" />
       <SubServersCards />
       <Footer />
     </div>

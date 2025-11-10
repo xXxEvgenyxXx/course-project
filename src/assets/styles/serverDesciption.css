@@ -58,5 +58,24 @@
   padding: 15px;
   width: 500px;
   line-height:25px;
-  font-size:1rem;
+  font-size:1.2rem;
+}
+@media (max-width:1199px) {
+  .server-desc-header {
+    font-size:1.5rem;
+  }
+  .server-desc {
+    font-size:1rem;
+  }
+}
+@media (max-width:1023px) {
+  .server-desc-header {
+    font-size:1.4rem;
+  }
+  .server-desc {
+    font-size:0.9rem;
+  }
+  .server-description-wrapper {
+    gap:50px;
+  }
 }

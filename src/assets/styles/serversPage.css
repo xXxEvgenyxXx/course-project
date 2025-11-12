@@ -1,5 +1,16 @@
 .hero-section {
-  padding: 150px 30px 50px;
+  padding: 125px 30px 50px;
   width: 50%;
-  line-height:25px;
+  line-height:30px;
+}
+.begin-your-journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.begin-your-journey h2  {
+  font-size:30px;
+}
+.begin-your-journey p {
+  color:#a0a0a0;
 }

@@ -36,7 +36,7 @@ nav {
   text-decoration: none;
   color: #e0e0e0;
   transition: 0.3s;
-  font-size:1.5rem;
+  font-size:1.2rem;
   padding: 5px 10px;
   border-radius: 12px;
 }
@@ -48,7 +48,7 @@ nav {
 }
 @media (max-width:1199px) {
   .header-link {
-    font-size:1.2rem;
+    font-size:1rem;
   }
 }
 @media (max-width:1023px){

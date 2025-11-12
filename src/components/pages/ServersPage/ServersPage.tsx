@@ -22,6 +22,10 @@ const ServersPage: FC<ServerPageProps> = (props) => {
         <ServerStats />
       </div>
       <SubServersCards />
+      <div className="begin-your-journey">
+        <h2>Начните своё приключение</h2>
+        <p>Отправьтесь в своё неповторимое путешествие на наших серверах</p>
+      </div>
       <Footer />
     </div>
   );

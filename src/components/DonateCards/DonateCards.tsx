@@ -18,12 +18,25 @@ const DonateCards = () => {
     }
   };
 
+  const hasPrev = currentIndex > 0;
+  const hasNext = currentIndex < listOfDonates.length - 1;
+
   return (
     <div className="donate-carousel-container">
+      {hasPrev && (
+        <div className="side-card-wrapper left">
+          <DonateCardUI
+            name={listOfDonates[currentIndex - 1].name}
+            background={listOfDonates[currentIndex - 1].background}
+            price={listOfDonates[currentIndex - 1].price}
+          />
+        </div>
+      )}
+
       <button
-        className={`carousel-btn carousel-btn-left ${currentIndex === 0 ? 'disabled' : ''}`}
+        className={`carousel-btn carousel-btn-left ${!hasPrev ? 'disabled' : ''}`}
         onClick={goToPrevious}
-        disabled={currentIndex === 0}
+        disabled={!hasPrev}
       >
         &lt;
       </button>
@@ -37,12 +50,22 @@ const DonateCards = () => {
       </div>
 
       <button
-        className={`carousel-btn carousel-btn-right ${currentIndex === listOfDonates.length - 1 ? 'disabled' : ''}`}
+        className={`carousel-btn carousel-btn-right ${!hasNext ? 'disabled' : ''}`}
         onClick={goToNext}
-        disabled={currentIndex === listOfDonates.length - 1}
+        disabled={!hasNext}
       >
         &gt;
       </button>
+
+      {hasNext && (
+        <div className="side-card-wrapper right">
+          <DonateCardUI
+            name={listOfDonates[currentIndex + 1].name}
+            background={listOfDonates[currentIndex + 1].background}
+            price={listOfDonates[currentIndex + 1].price}
+          />
+        </div>
+      )}
     </div>
   );
 };

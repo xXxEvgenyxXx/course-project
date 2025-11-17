@@ -12,7 +12,7 @@ const ServersPage: FC<ServerPageProps> = (props) => {
   return (
     <div className="serverspage-wrapper">
       <Header />
-      <div className="hero-section">
+      <div className="hero-section servers-hero-section">
         <h1>Наши серверы</h1>
         <p>
           Мы создаем неповторимые серверы, дополняя их своими уникальными

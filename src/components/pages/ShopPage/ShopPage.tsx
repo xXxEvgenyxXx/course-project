@@ -11,7 +11,7 @@ const ShopPage: FC<ShopPageProps> = (props) => {
   return (
     <div className="shoppage-wrapper">
       <Header />
-      <div className="hero-section">
+      <div className="hero-section shop-hero-section">
         <h1 className="text-accent">Магазин привилегий</h1>
         <p>Купите привилегии и станьте намного круче!<br/>С ними вы получите уникальные возможности</p>
       </div>

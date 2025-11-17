@@ -15,7 +15,7 @@ export const listOfDonates: IDonate[] = [
     {
         index: 1,
         name: "премиум",
-        background: "/images/vip-icon.png",
+        background: "/images/premium-icon.png",
         price: 299
     },
     {

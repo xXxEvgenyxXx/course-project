@@ -6,7 +6,6 @@ import DonateCards from '../../DonateCards/DonateCards';
 import '../../../assets/styles/shopPage.css'
 
 const ShopPage: FC<ShopPageProps> = (props) => {
-  // const { title, count = 0, onClick } = props;
 
   return (
     <div className="shoppage-wrapper">

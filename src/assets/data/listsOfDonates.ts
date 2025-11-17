@@ -13,25 +13,25 @@ export const listOfDonates: IDonate[] = [
         price: 99
     },
     {
-        index: 1,
+        index: 2,
         name: "премиум",
         background: "/images/premium-icon.png",
         price: 299
     },
     {
-        index: 1,
+        index: 3,
         name: "делюкс",
         background: "/images/vip-icon.png",
         price: 499
     },
     {
-        index: 1,
+        index: 4,
         name: "ультра",
         background: "/images/vip-icon.png",
         price: 999
     },
     {
-        index: 1,
+        index: 5,
         name: "легенда",
         background: "/images/vip-icon.png",
         price: 1499

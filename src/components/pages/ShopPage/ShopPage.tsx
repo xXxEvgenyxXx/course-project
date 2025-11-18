@@ -16,7 +16,7 @@ const ShopPage: FC<ShopPageProps> = (props) => {
         <p>Купите привилегии и станьте намного круче!<br/>С ними вы получите уникальные возможности</p>
       </div>
       <DonateCards />
-      <h3 className="privilege-features-header">Возможности при покупке привилегий</h3>
+      <h3 className="text-accent privilege-features-header">Возможности при покупке привилегий</h3>
       <PrivilegeFeatures />
       <div className="shop-fine-print">
         <h3>Привилегия приобретается отдельно на каждом сервере.</h3>

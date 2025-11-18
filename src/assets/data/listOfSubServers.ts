@@ -27,7 +27,7 @@ export const listOfSubServers: IServer[] = [
   },
   {
     name: 'Novoakopovsk 2077',
-    description: 'в разработке',
+    description: 'это сервер, в котором вы можете воплотить любую фантазию о будущем в реальность!',
     online: 0,
     background: '/images/2077-server-bg.png',
     cardBackground: '/images/2077-server-card-bg.png',

@@ -2,6 +2,9 @@
   padding: 125px 30px 50px;
   line-height:30px;
 }
+.servers-hero-section {
+  width:50%;
+}
 .begin-your-journey {
   display: flex;
   flex-direction: column;

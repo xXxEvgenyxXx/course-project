@@ -39,8 +39,14 @@ nav {
   font-size:1.2rem;
   padding: 5px 10px;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap:10px;
 }
-
+.logo {
+  width: 30px;
+  height:30px;
+}
 .header-link:hover {
   color: #00bcd4;
   background-color: #2a2a2a;

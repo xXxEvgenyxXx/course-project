@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <div className="server-name-wrapper">
         <a className="header-link" href="/">
-          Project Novoakopovsk
+          <img className="logo" src={require("../../../assets/images/logo.png")}/> Project Novoakopovsk
         </a>
       </div>
       <nav>

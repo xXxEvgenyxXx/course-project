@@ -1,9 +1,17 @@
 import React from 'react';
+import { listOfPrivilegeFeatures } from '../../assets/data/listOfPrivilegeFeatures';
+import PrivilegeFeatureUI from '../ui/privilegeFeature/privilegeFeature';
 
 const PrivilegeFeatures = () => {
   return (
-    <div>
-      <h1>Component Name</h1>
+    <div className="privilege-feats-wrapper">
+      {listOfPrivilegeFeatures.map((privilegeFeat) => (
+        <PrivilegeFeatureUI 
+          name={privilegeFeat.name}  
+          availableFor={privilegeFeat.availableFor}
+          shortDesc={privilegeFeat.shortDesc || ''}
+        />
+      ))}
     </div>
   );
 };

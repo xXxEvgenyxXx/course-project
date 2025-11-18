@@ -3,6 +3,7 @@ import { ShopPageProps } from './type';
 import Header from '../../ui/Header/Header';
 import Footer from '../../Footer/Footer';
 import DonateCards from '../../DonateCards/DonateCards';
+import PrivilegeFeatures from '../../privilegeFeatures/PrivilegeFeatures';
 import '../../../assets/styles/shopPage.css'
 
 const ShopPage: FC<ShopPageProps> = (props) => {
@@ -15,6 +16,7 @@ const ShopPage: FC<ShopPageProps> = (props) => {
         <p>Купите привилегии и станьте намного круче!<br/>С ними вы получите уникальные возможности</p>
       </div>
       <DonateCards />
+      <PrivilegeFeatures />
       <Footer />
     </div>
   );

@@ -17,6 +17,10 @@ const ShopPage: FC<ShopPageProps> = (props) => {
       </div>
       <DonateCards />
       <PrivilegeFeatures />
+      <div className="shop-fine-print">
+        <h3>Привилегия приобретается отдельно на каждом сервере.</h3>
+        <p>1 месяц равняется 31 дню.</p>
+      </div>
       <Footer />
     </div>
   );

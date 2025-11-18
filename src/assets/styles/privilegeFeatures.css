@@ -1,0 +1,11 @@
+.privilege-feats-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 60px 30px 0;
+    gap:20px;
+}
+.privilege-feats-wrapper > *:last-child:nth-child(odd) {
+  grid-column: span 2;
+  width: 45%;
+  justify-self: center;
+}

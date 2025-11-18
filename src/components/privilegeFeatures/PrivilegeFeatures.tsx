@@ -1,6 +1,7 @@
 import React from 'react';
 import { listOfPrivilegeFeatures } from '../../assets/data/listOfPrivilegeFeatures';
 import PrivilegeFeatureUI from '../ui/privilegeFeature/privilegeFeature';
+import '../../assets/styles/privilegeFeatures.css'
 
 const PrivilegeFeatures = () => {
   return (

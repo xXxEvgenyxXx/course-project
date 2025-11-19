@@ -5,6 +5,8 @@ import ServerDescription from '../../ui/ServerDescription/ServerDescription';
 import SubServersList from '../../SubServersList/SubServersList';
 import '../../../assets/styles/header.css';
 import Footer from '../../Footer/Footer';
+import NewsSlider from '../../newsSlider/newsSlider';
+import '../../../assets/styles/homePage.css'
 
 const HomePage: FC<HomePageProps> = (props) => {
   // const { title, count = 0, onClick } = props;
@@ -14,6 +16,11 @@ const HomePage: FC<HomePageProps> = (props) => {
       <Header />
       <ServerDescription />
       <SubServersList />
+      <div className="news-header">
+        <h3>Новости проекта</h3>
+        <p>Погрузитесь в насыщенную историю нашего проекта</p>
+      </div>
+      <NewsSlider />
       <Footer />
     </div>
   );

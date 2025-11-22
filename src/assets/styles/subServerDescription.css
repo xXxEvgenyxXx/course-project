@@ -78,3 +78,27 @@
     gap:50px;
   }
 }
+@media(max-width:767px){
+  .subserver-description-wrapper {
+    gap:30px;
+  }
+  .subserver-desc {
+    font-size:0.7rem;
+  }
+  .subserver-desc-header {
+    padding:15px 15px;
+  }
+}
+@media(max-width:479px){
+  .subserver-description-wrapper {
+    padding:60px 10px;
+    gap:10px;
+  }
+  .subserver-desc-header {
+    font-size:14px;
+    padding:14px;
+  }
+  .subserver-desc {
+    font-size:10px;
+  }
+}

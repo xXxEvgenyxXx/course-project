@@ -81,3 +81,24 @@
     gap:50px;
   }
 }
+@media(max-width:767px){
+  .server-description-wrapper {
+    gap:30px;
+  }
+  .server-desc {
+    font-size:0.7rem;
+  }
+}
+@media(max-width:479px){
+  .server-description-wrapper {
+    padding:60px 10px;
+    gap:10px;
+  }
+  .server-desc-header {
+    font-size:14px;
+    padding:14px;
+  }
+  .server-desc {
+    font-size:10px;
+  }
+}

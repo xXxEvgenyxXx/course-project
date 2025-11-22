@@ -1,7 +1,6 @@
 .news-slider-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  max-width:90%;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -88,4 +87,20 @@
 
 .next-btn {
   right: 0;
+}
+
+@media (max-width:767px) {
+  .news-card {
+    flex-direction: column;
+  }
+}
+@media (max-width:479px){
+  .news-slider-wrapper {
+    padding: 50px 10px;
+  }
+  .slider-btn {
+    width:30px;
+    height:30px;
+    font-size:0.8rem;
+  }
 }

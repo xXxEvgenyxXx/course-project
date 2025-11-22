@@ -10,3 +10,14 @@
   width: 45%;
   justify-self: center;
 }
+@media(max-width:1023px){
+  .subservers-cards-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 150px 50px;
+  }
+  .subservers-cards-wrapper > *:last-child:nth-child(odd) {
+    grid-column: auto;
+    width: auto;
+    justify-self: auto;
+  }
+}

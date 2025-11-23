@@ -31,3 +31,8 @@ footer {
     text-align: center;
   }
 }
+@media(max-width:479px){
+  footer {
+    padding-top:0;
+  }
+}

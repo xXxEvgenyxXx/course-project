@@ -26,3 +26,8 @@ footer {
 .footer-bottom {
   color: #a0a0a0;
 }
+@media(max-width:1023px){
+  .footer-bottom {
+    text-align: center;
+  }
+}

@@ -16,3 +16,18 @@
 .begin-your-journey p {
   color:#a0a0a0;
 }
+@media(max-width:767px){
+  .servers-hero-section {
+    justify-self:center;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .begin-your-journey {
+    justify-self:center;
+    text-align: center;
+    width:85%;
+  }
+}

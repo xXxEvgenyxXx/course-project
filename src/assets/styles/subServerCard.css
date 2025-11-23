@@ -45,3 +45,20 @@
   left: 10px;
   margin-right: 10px;
 }
+@media(max-width:767px){
+  .subserver-card-content-wrapper h2 {
+    width:50%;
+  }
+}
+@media(max-width:479px){
+  .subserver-card {
+    padding: 0 15px;
+  }
+  .subserver-card-content-wrapper h2 {
+    font-size:20px;
+  }
+  .subserver-online-wrapper {
+    font-size:14px;
+    padding: 0 13px;
+  }
+}

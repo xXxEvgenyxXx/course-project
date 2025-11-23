@@ -21,3 +21,8 @@
     justify-self: auto;
   }
 }
+@media(max-width:767px){
+  .subservers-cards-wrapper {
+    padding: 0 30px 50px;
+  }
+}

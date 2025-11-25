@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../assets/styles/footer.css';
 import { footerLinks } from '../../assets/data/footerLinks';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="footer-links-wrapper">
           <h2 className="footer-links-head">{footerLinksGroup.header}</h2>
           {footerLinksGroup.links.map((footerLink) => (
-            <a href={footerLink.url}>{footerLink.name}</a>
+            <Link to={footerLink.url}>{footerLink.name}</Link>
           ))}
         </div>
       ))}

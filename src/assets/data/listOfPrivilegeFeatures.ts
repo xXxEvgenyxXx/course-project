@@ -14,10 +14,6 @@ export const listOfPrivilegeFeatures: IPrivilegeFeature[] = [
         availableFor: "вип",
     },
     {
-        name: "Сохранение опыта при смерти",
-        availableFor: "вип",
-    },
-    {
         name:"Команда /feed",
         shortDesc:"Восстановить сытость",
         availableFor:"вип",

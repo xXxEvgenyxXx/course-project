@@ -6,11 +6,13 @@ import '../../assets/styles/privilegeFeatures.css'
 const PrivilegeFeatures = () => {
   return (
     <div className="privilege-feats-wrapper">
-      {listOfPrivilegeFeatures.map((privilegeFeat) => (
+      {listOfPrivilegeFeatures.map((privilegeFeat, index) => (
         <PrivilegeFeatureUI 
+          key={index}
           name={privilegeFeat.name}  
           availableFor={privilegeFeat.availableFor}
           shortDesc={privilegeFeat.shortDesc || ''}
+          index={index}
         />
       ))}
     </div>

@@ -1,23 +1,26 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom'; // Импортируем Link и useLocation
 
 const Header = () => {
+  const location = useLocation(); // Получаем текущий путь
+
   return (
     <header>
       <div className="server-name-wrapper">
-        <a className="header-link" href="/">
-          <img className="logo" src={require("../../../assets/images/logo.png")}/> Project Novoakopovsk
-        </a>
+        <Link className={`header-link`} to="/">
+          <img className="logo" src={require("../../../assets/images/logo.png")} alt="Logo" /> Project Novoakopovsk
+        </Link>
       </div>
       <nav>
-        <a className="header-link" href="/">
+        <Link className={`header-link ${location.pathname === '/' ? 'active' : ''}`} to="/">
           Главная
-        </a>
-        <a className="header-link" href="/servers">
+        </Link>
+        <Link className={`header-link ${location.pathname === '/servers' ? 'active' : ''}`} to="/servers">
           Серверы
-        </a>
-        <a className="header-link" href="/shop">
+        </Link>
+        <Link className={`header-link ${location.pathname === '/shop' ? 'active' : ''}`} to="/shop">
           Магазин
-        </a>
+        </Link>
       </nav>
     </header>
   );

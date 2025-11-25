@@ -1,6 +1,6 @@
 import React, { FC, useMemo } from 'react';
-import { SubServerCardUIProps } from './type';
 import '../../../assets/styles/subServerCard.css';
+import { SubServerCardUIProps } from './type';
 
 // #a0a0a0 при статусе оффлайн
 // #4caf50 при статусе онлайн

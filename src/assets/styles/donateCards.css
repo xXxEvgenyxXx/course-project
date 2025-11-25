@@ -1,0 +1,92 @@
+.donate-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.active-card-wrapper {
+  z-index: 2;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.side-card-wrapper {
+  position: relative;
+  z-index: 1;
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.side-card-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.side-card-wrapper.left::before {
+  background: linear-gradient(to left, transparent, #121212);
+}
+
+.side-card-wrapper.right::before {
+  background: linear-gradient(to right, transparent, #121212);
+}
+
+/* Плавность при смене карточек */
+.donate-carousel-container * {
+  will-change: transform, opacity;
+  transition:0.3s;
+}
+
+.carousel-btn {
+  min-width:50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.carousel-btn:hover:not(.disabled) {
+  background-color: #0097a7;
+}
+
+.carousel-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+@media(max-width:767px){
+  .donate-carousel-container {
+    gap:15px;
+  }
+  .carousel-btn {
+    min-width:40px;
+    width:40px;
+    height:40px;
+  }
+}
+@media(max-width:550px){
+  .carousel-btn {
+    min-width:35px;
+    height:35px;
+    width:35px;
+  }
+}
+@media(max-width:479px){
+  .side-card-wrapper {
+    display: none;
+  }
+}

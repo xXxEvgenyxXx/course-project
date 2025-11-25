@@ -1,0 +1,22 @@
+.privilege-feature {
+    background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Эффект размытия */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-family: 'Exo 2',sans-serif;
+}
+.available-for {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius:6px;
+}
+@media(max-width:550px ){
+    .privilege-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+}

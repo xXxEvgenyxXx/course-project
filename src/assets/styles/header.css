@@ -1,0 +1,125 @@
+header {
+  position: fixed;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  z-index: 100;
+  width: 100%;
+}
+
+.server-name-wrapper {
+  background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+  backdrop-filter: blur(10px); /* Эффект размытия */
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+  backdrop-filter: blur(10px); /* Эффект размытия */
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: 0.3s;
+  font-size:1.2rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.logo {
+  width: 30px;
+  height:30px;
+}
+.header-link:hover {
+  color: #00bcd4;
+  background-color: #2a2a2a;
+  transition: 0.3s;
+}
+.header-link {
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: 0.3s;
+  font-size:1.2rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+/* Добавляем стиль для активной ссылки */
+.header-link.active,
+.header-link:active {
+  color: #00bcd4;
+  background-color: #2a2a2a;
+}
+
+.logo {
+  width: 30px;
+  height:30px;
+}
+
+.header-link:hover {
+  color: #00bcd4;
+  background-color: #2a2a2a;
+  transition: 0.3s;
+}
+@media (max-width:1199px) {
+  .header-link {
+    font-size:1rem;
+  }
+}
+@media (max-width:1023px){
+  header {
+    gap:25px;
+  }
+  .header-link {
+    font-size:1rem;
+  }
+}
+@media (max-width: 767px){
+  header {
+    padding: 15px 0;
+    gap:12px;
+  }
+  nav {
+    padding: 5px 5px;
+    gap: 0.1rem;
+  }
+  .header-link {
+   font-size:14px;
+  }
+  .server-name-wrapper {
+    padding: 5px 7px;
+  }
+}
+@media(max-width:479px){
+  header {
+    flex-direction: column;
+    width:80%;
+    justify-self: center;
+  }
+  .header-link {
+    font-size:12px;
+  }
+  .server-name-wrapper {
+    padding: 2px 2px;
+  }
+}

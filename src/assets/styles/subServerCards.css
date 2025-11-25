@@ -1,0 +1,28 @@
+.subservers-cards-wrapper {
+  padding: 0 30px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
+}
+.subservers-cards-wrapper > *:last-child:nth-child(odd) {
+  grid-column: span 2;
+  width: 45%;
+  justify-self: center;
+}
+@media(max-width:1023px){
+  .subservers-cards-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 150px 50px;
+  }
+  .subservers-cards-wrapper > *:last-child:nth-child(odd) {
+    grid-column: auto;
+    width: auto;
+    justify-self: auto;
+  }
+}
+@media(max-width:767px){
+  .subservers-cards-wrapper {
+    padding: 0 30px 50px;
+  }
+}

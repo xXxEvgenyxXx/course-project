@@ -1,0 +1,24 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.text-accent {
+  color: #00bcd4;
+}
+.hero-section {
+  padding: 125px 30px 50px;
+  line-height:30px;
+}
+@media(max-width:767px){
+  .hero-section {
+    padding: 100px 30px 50px;
+  }
+}
+@media(max-width:479px){
+  .hero-section {
+    padding-top: 120px;
+  }
+}

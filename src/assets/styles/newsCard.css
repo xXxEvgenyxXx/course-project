@@ -1,0 +1,51 @@
+.news-card {
+    display: flex;
+    background-color: rgba(26, 26, 26, 0.7); /* Полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Эффект размытия */
+    -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* 2px рамка */
+    border-radius: 12px;
+    width:75%;
+    gap:30px;
+    font-family: 'Exo 2',sans-serif;
+    padding-right:30px;
+}
+.news-img {
+    width:45%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    object-fit: cover;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);;
+}
+.news-text {
+    color:#a0a0a0;
+}
+
+@media (max-width:767px) {
+    .news-card {
+        padding-right:0;
+        gap:5px;
+        font-size:14px;
+    }
+    .news-img {
+        width:100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius:12px;
+        border-right: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    .news-content {
+        padding: 0 30px;
+    }
+}
+@media(max-width:479px){
+    .news-card {
+        font-size:10px;
+    }
+    .news-content {
+        padding: 0 10px;
+    }
+    .news-text {
+        display: none;
+    }
+}

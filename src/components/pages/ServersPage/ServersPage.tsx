@@ -5,6 +5,7 @@ import Footer from '../../Footer/Footer';
 import SubServersCards from '../../SubServersCards/SubServersCards';
 import '../../../assets/styles/serversPage.css';
 import ServerStats from '../../serverStats/serverStats';
+import ServersGallery from '../../serversGallery/serversGallery';
 
 const ServersPage: FC<ServerPageProps> = (props) => {
   // const { title, count = 0, onClick } = props;
@@ -26,6 +27,7 @@ const ServersPage: FC<ServerPageProps> = (props) => {
         <h2>Начните своё приключение</h2>
         <p>Отправьтесь в своё неповторимое путешествие на наших серверах</p>
       </div>
+      <ServersGallery />
       <Footer />
     </div>
   );

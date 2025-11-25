@@ -1,16 +1,23 @@
-import React, { FC } from 'react';
+import React, { FC, useMemo } from 'react';
 import { ServerOnlineNumberUIProps } from './type';
 import '../../../assets/styles/serverOnlineNumber.css'
+
 // #a0a0a0 при статусе оффлайн
 // #4caf50 при статусе онлайн
 const ServerOnlineNumberUI: FC<ServerOnlineNumberUIProps> = (props) => {
-    let colorStatus: string = '#4caf50';
-    if (props.status === 'offline') {
-        colorStatus = '#a0a0a0';
-    }
-    const statusColor: React.CSSProperties = {
-        backgroundColor: colorStatus
-    }
+    const statusColor: React.CSSProperties = useMemo(() => {
+        if (props.status === 'offline') {
+            return {
+                backgroundColor: '#a0a0a0',
+            };
+        } else {
+            // Для онлайн-статуса добавляем анимацию мигания
+            return {
+                backgroundColor: '#4caf50',
+                animation: 'pulse 1s infinite',
+            };
+        }
+    }, [props.status]);
 
     return (
         <div className="server-online-number-wrapper">

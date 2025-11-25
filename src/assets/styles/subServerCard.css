@@ -45,6 +45,23 @@
   left: 10px;
   margin-right: 10px;
 }
+@keyframes pulse {
+  0%, 100% {
+    background-color: #4caf50;
+  }
+  50% {
+    background-color: #3d8b40; /* Более темный оттенок #4caf50 */
+  }
+}
+
+.subserver-online-status {
+  /* другие стили */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 8px;
+}
 @media(max-width:767px){
   .subserver-card-content-wrapper h2 {
     width:50%;

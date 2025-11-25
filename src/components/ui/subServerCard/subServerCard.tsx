@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, useMemo } from 'react';
 import { SubServerCardUIProps } from './type';
 import '../../../assets/styles/subServerCard.css';
+
 // #a0a0a0 при статусе оффлайн
 // #4caf50 при статусе онлайн
 const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
@@ -16,22 +17,28 @@ const SubServerCardUI: FC<SubServerCardUIProps> = (props) => {
       widthPercentage = '65px';
     } else if (props.online >= 10 && props.online <= 99) {
       widthPercentage = '50px';
-    } else if (props.online >= 0 && props.online <=9) {
+    } else if (props.online >= 0 && props.online <= 9) {
       widthPercentage = '40px';
     }
   }
 
-  let colorStatus: string = '#4caf50';
-  if (props.status === 'offline') {
-    colorStatus = '#a0a0a0';
-  }
+  // Определяем стили в зависимости от статуса
+  const colorStatusStyle: React.CSSProperties = useMemo(() => {
+    if (props.status === 'offline') {
+      return {
+        backgroundColor: '#a0a0a0',
+      };
+    } else {
+      // Для онлайн-статуса добавляем анимацию мигания
+      return {
+        backgroundColor: '#4caf50',
+        animation: 'pulse 1s infinite',
+      };
+    }
+  }, [props.status]);
 
   const onlineWrapperStyle: React.CSSProperties = {
     width: widthPercentage,
-  };
-
-  const colorStatusStyle: React.CSSProperties = {
-    backgroundColor: colorStatus,
   };
 
   return (

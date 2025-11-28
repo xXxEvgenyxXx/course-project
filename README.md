@@ -28,7 +28,7 @@
 2. Склонируйте репозиторий
    `git clone https://github.com/xXxEvgenyxXx/course-project`
 3. Перейдите в директорию проекта:
-   `cd course-work`
+   `cd course-project`
 4. Установите зависимости:
    `npm install`
 5. Запустите в режиме разработки:
